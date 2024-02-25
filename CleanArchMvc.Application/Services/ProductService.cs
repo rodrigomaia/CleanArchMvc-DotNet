@@ -17,24 +17,19 @@ public class ProductService(IMapper mapper, IMediator mediator) : IProductServic
 
     public async Task<ProductDTO> GetByIdAsync(int? id)
     {
-        var productsQuery = new GetProductByIdQuery(id.Value);
-        var result = await mediator.Send(productsQuery);
-
+        var result = await mediator.Send(new GetProductByIdQuery(id.Value));
         return mapper.Map<ProductDTO>(result);
     }
 
     public async Task<IEnumerable<ProductDTO>> GetProductsAsync()
     {
-        var productsQuery = new GetProductsQuery();
-        var result = await mediator.Send(productsQuery);
-
+        var result = await mediator.Send(new GetProductsQuery());
         return mapper.Map<IEnumerable<ProductDTO>>(result);
     }
 
     public async Task RemoveAsync(int? id)
     {
-        var productCommand = new ProductDeleteCommand(id.Value);
-        await mediator.Send(productCommand);
+        await mediator.Send(new ProductDeleteCommand(id.Value));
     }
 
     public async Task UpdateAsync(ProductDTO productDto)
