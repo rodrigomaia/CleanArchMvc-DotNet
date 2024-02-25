@@ -17,3 +17,5 @@
 /home/rodrigo/workspace/cursos/cleanarch/CleanArchMvc.Infra.IoC/bin/Debug/net8.0/CleanArchMvc.Infra.Data.pdb
 /home/rodrigo/workspace/cursos/cleanarch/CleanArchMvc.Infra.IoC/obj/Debug/net8.0/CleanArchMvc.Infra.IoC.csproj.AssemblyReference.cache
 /home/rodrigo/workspace/cursos/cleanarch/CleanArchMvc.Infra.IoC/obj/Debug/net8.0/CleanArchMvc.Infra.IoC.csproj.CopyComplete
+/home/rodrigo/workspace/cursos/cleanarch/CleanArchMvc.Infra.IoC/bin/Debug/net8.0/CleanArchMvc.Infra.IoC.runtimeconfig.json
+/home/rodrigo/workspace/cursos/cleanarch/CleanArchMvc.Infra.IoC/obj/Debug/net8.0/CleanArchMvc.Infra.IoC.genruntimeconfig.cache

@@ -7,6 +7,7 @@ namespace CleanArchMvc.Application.DTOs;
 
 public class ProductDTO
 {
+    public int Id { get; set; }
     [Required]
     [MinLength(3)]
     [MaxLength(100)]
