@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "+CJ80KRfYDgugdhaHvwLbIZognNED0imWvehwQagwVwtlRbS8w8YRShZEqLivIrB3KyYIEEZ9MsrIkC9/MAVIA==",
+  "dgSpecHash": "2Bw8kvRelJ2fIYzhclizL+x0+IImYEiB/Dsh91y76L1zNFxWI/V65tFyxGWRoKYvf5hrG5m5YYXCZxKAo5UFfQ==",
   "success": true,
   "projectFilePath": "/home/rodrigo/workspace/cursos/cleanarch/CleanArchMvc.Infra.IoC/CleanArchMvc.Infra.IoC.csproj",
   "expectedPackageFiles": [
+    "/home/rodrigo/.nuget/packages/automapper/13.0.1/automapper.13.0.1.nupkg.sha512",
     "/home/rodrigo/.nuget/packages/azure.core/1.35.0/azure.core.1.35.0.nupkg.sha512",
     "/home/rodrigo/.nuget/packages/azure.identity/1.10.3/azure.identity.1.10.3.nupkg.sha512",
     "/home/rodrigo/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",

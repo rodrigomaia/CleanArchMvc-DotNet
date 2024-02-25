@@ -1,8 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "mNXTy1tQnI0aqO5rxXbTxwJ0k6cB0L7GZ7jPPL2qThcMbI6Ne1OXFKcxp12hSFGPn/Vk+4Ty5c+PzrdHEuMSMw==",
+  "dgSpecHash": "Gl5dARb4Vj7AcsxPgTd0ifB5QP4EbyZM1b+hAEheFw1mbodOVa9BUos4VKQWkgV8VR2sc76tLOUUQh2TRf7MBA==",
   "success": true,
   "projectFilePath": "/home/rodrigo/workspace/cursos/cleanarch/CleanArchMvc.Application/CleanArchMvc.Application.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/home/rodrigo/.nuget/packages/automapper/13.0.1/automapper.13.0.1.nupkg.sha512",
+    "/home/rodrigo/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/6.0.0/microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "/home/rodrigo/.nuget/packages/microsoft.extensions.options/6.0.0/microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "/home/rodrigo/.nuget/packages/microsoft.extensions.primitives/6.0.0/microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "/home/rodrigo/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
