@@ -1,7 +1,7 @@
 using CleanArchMvc.Infra.IoC;
 
 var builder = WebApplication.CreateBuilder(args);
-
+// extension mmethod to IoC
 builder.Services.AddInfrastructure(builder.Configuration);
 // Add services to the container.
 builder.Services.AddControllersWithViews();

@@ -16,11 +16,6 @@ public class ProductRepository(ApplicationDbContext context) : IProductRepositor
 
     public async Task<Product> GetByIdAsync(int? id)
     {
-        return await context.Products.SingleOrDefaultAsync(e => e.Id == id);
-    }
-
-    public async Task<Product> GetProductCategoryAsync(int? id)
-    {
         return await context.Products
                 .Include(e => e.Category)
                 .SingleOrDefaultAsync(e => e.Id == id);

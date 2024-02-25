@@ -1,4 +1,5 @@
-﻿using CleanArchMvc.Application.Interfaces;
+﻿using System.Reflection;
+using CleanArchMvc.Application.Interfaces;
 using CleanArchMvc.Application.Mappings;
 using CleanArchMvc.Application.Services;
 using CleanArchMvc.Domain.Interfaces;
@@ -24,6 +25,11 @@ public static class DependencyInjection
         services.AddScoped<IProductService, ProductService>();
 
         services.AddAutoMapper(typeof(DomainToDTOMappingProfile));
+        services.AddAutoMapper(typeof(DTOToCommandMappingProfile));
+
+        //usando o DTOToCommandMappingProfile pra referenciar o projeto Application
+        services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblyContaining<DTOToCommandMappingProfile>());
+
         return services;
     }
 }
