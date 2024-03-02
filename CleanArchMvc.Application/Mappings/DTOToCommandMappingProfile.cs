@@ -1,4 +1,5 @@
 using AutoMapper;
+using CleanArchMvc.Application.Categories.Commands;
 using CleanArchMvc.Application.DTOs;
 using CleanArchMvc.Application.Products.Commands;
 using CleanArchMvc.Domain.Entities;
@@ -11,5 +12,8 @@ public class DTOToCommandMappingProfile : Profile
     {
         CreateMap<ProductDTO, ProductCreateCommand>();
         CreateMap<ProductDTO, ProductUpdateCommand>();
+
+        CreateMap<CategoryDTO, CategoryCreateCommand>();
+        CreateMap<CategoryDTO, CategoryUpdateCommand>();
     }
 }
