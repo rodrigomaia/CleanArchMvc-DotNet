@@ -29,7 +29,7 @@ public class CategoryService(IMapper mapper, IMediator mediator) : ICategoryServ
 
     public async Task RemoveAsync(int? id)
     {
-        await mediator.Send(new GetCategoryByIdQuery(id.Value));
+        await mediator.Send(new CategoryDeleteCommand(id.Value));
     }
 
     public async Task UpdateAsync(CategoryDTO categoryDto)

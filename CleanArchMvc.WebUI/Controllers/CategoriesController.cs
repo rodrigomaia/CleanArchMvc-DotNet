@@ -1,9 +1,11 @@
 using CleanArchMvc.Application.Interfaces;
 using CleanArchMvc.Application.DTOs;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 
 namespace CleanArchMvc.WebUI.Controllers;
 
+[Authorize]
 public class CategoriesController(ICategoryService categoryService) : Controller
 {
     [HttpGet]
@@ -44,5 +46,25 @@ public class CategoriesController(ICategoryService categoryService) : Controller
         }
 
         return View(categoryDTO);
+    }
+
+    public async Task<IActionResult> Delete(int? id){
+        var category = await categoryService.GetByIdAsync(id);
+
+        return View(category);
+    }
+
+    [HttpPost]
+    [ActionName("Delete")]
+    public async Task<IActionResult> DeleteConfirmed(int? id){
+        await categoryService.RemoveAsync(id);
+
+        return RedirectToAction(nameof(Index));
+    }
+
+    public async Task<IActionResult> Details(int? id){
+        var category = await categoryService.GetByIdAsync(id);
+
+        return View(category);
     }
 }
