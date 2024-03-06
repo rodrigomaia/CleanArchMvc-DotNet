@@ -10,6 +10,7 @@ using CleanArchMvc.Infra.Data.Repositories;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.IdentityModel.Protocols;
 
 namespace CleanArchMvc.Infra.IoC;
 
@@ -37,6 +38,8 @@ public static class DependencyInjectionApi
 
         //usando o DTOToCommandMappingProfile pra referenciar o projeto Application
         services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblyContaining<DTOToCommandMappingProfile>());
+
+        services.AddSingleton<IConfiguration>(config);
 
         return services;
     }
